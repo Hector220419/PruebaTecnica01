@@ -50,86 +50,87 @@ body{
         display: inline-flex;
         align-items: center;
         & + li:before {
-          content: " | ";
+          content: " | "; // Se agregan los componentes para separar cada uno de los elementos
           color: $color-green;
         }
         &:hover {
-            font-family: 'Lato-Black';
+            font-family: 'Lato-Black'; // Si se hace hover en el elemento, se cambia la tipografia
         }
       }
 
       .navbar-nav {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-end;
-        padding-right: 10%;
+        justify-content: flex-end; // Establecemos que el navbar se encuentra del lado derecho con flex-end
+        padding-right: 10%; // Se coloca un padding para que no se junte a la ventana
       }
 }
 
 .contenedorPrincipal{
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    flex-wrap: wrap; // Los componentes se encuentran envueltos correctamente
+    align-items: flex-start; // Para el contenedor principal, colocamos que comience en flex-start
 }
 
 .tarjetasPrincipales {
-    display: inline-flex;
+    display: inline-flex; // Empleamos el inline-flex para mencionar que es una sola linea
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: flex-end; // Comienza en la parte final
     width: 65%;
-    margin-right: 1%;
-    .background {
-        box-sizing: border-box;
+    margin-right: 1%; // Agregamos un margen
+    .background { // Clase para cambiar el color de la tarjeta
+        box-sizing: border-box; // Se establece border box para evitar cualquier error entre el border y el outline
         border: 3px dotted white;
-        outline: 10px solid $color-green;
-        width: 25%;
+        outline: 10px solid $color-green; // Se agrega un outline y un border para evitar colocar dos elementos div, asignando el color para cada uno de ellos
+        width: 25%; 
         height: auto;
         margin: 1.5%;
         border-radius: 1.5%;
-        background: $color-green;
-        &:hover {
+        background: $color-green; // Color solicitado por el usuario
+        &:hover { // Cuando se presione, el color de fondo, el sombreado y la tipografia cambian
             background: $color-purple;
             outline: 10px solid $color-purple;
             font-family: 'Lato-Black';
         }
-            .separation {
+            .separation { // Esta separacion representa un div con fondo blanco, donde se coloca la imagen y descripcion
                 background-color: white;
                 padding: 3%;
-                border: 1vh solid $color-green;
+                border: 1vh solid $color-green; // Border de color verde
                 &:hover {
-                    border-color: $color-purple; // color de fondo al pasar el cursor
+                    border-color: $color-purple; // cambia el color al permanecer por encima del elemento
                 }
                 img{
                     width: 100%;
                     height: 70%;
                     padding: 0 10% 0 10%;
-                    border-bottom: 3px dotted $color-green;
+                    border-bottom: 3px dotted $color-green; // Se usa border-bottom unicamente para la parte inferior, definiendo el color y el tipo de linea
                     &:hover {
-                        border-color: $color-purple; // color de fondo al pasar el cursor
+                        border-color: $color-purple; // Si se presiona mantiene por encima del elemento, cambia el color
                     }
                 }
                 p{
                     height: 30%;
-                    margin: 2vh 0 2vh 0;
+                    margin: 2vh 0 2vh 0; // atributos respectivos para la etiqueta p
                     text-align: center;
                 }
             }
     }
-    .redesSociales {
-        order: 2;
+    .redesSociales { // Clase para los iconos de las redes sociales
+        order: 2; // se coloca order 2 para que se coloquen primero las tarjetas principales
         width: 100%;
         text-align: right;
         .icons {
-            background: $color-purple;
+            background: $color-purple; // Se coloca el color de los iconos
             border-radius: 50%;
             align-content: flex-start;
             &:hover {
-                background: $color-green;
+                background: $color-green; // En caso de hacer hover sobre el elemento, este cambia de color
             }
         }
     }
 }
 
+/*Se aplican propiedades similares que en las tarjetas principales, unicamente modificando algunos parametros como la direccion del flex*/
 .tarjetasSecundarias {
     display: inline-flex;
     flex-flow: column wrap;
@@ -164,10 +165,11 @@ body{
     }
 }
 
-.tarjetaOculta {
-    position: fixed;
+
+.tarjetaOculta { // clase para la tarjeta oculta
+    position: fixed; // Se fija la tarjeta de manera que no se mueva
     display: inline-flex;
-    flex-flow: column wrap;
+    flex-flow: column wrap; // se aplican caracteristicas similares a las anteriores tarjetas
     width: 20%;
     justify-content: flex-end;
     .backgroundOcul {
@@ -199,9 +201,9 @@ body{
     }
 }
 
-.miniatura {
-    position: fixed;
-    width: 15%;
+.miniatura { // se crea la tarjeta indivifual
+    position: fixed; // se fija
+    width: 15%; // Mismo proceso que el anterior
     right: 5%;
     color: $color-purple;
     background: white;
@@ -238,37 +240,37 @@ body{
     }
     .tarjetasPrincipales {
         width: 80%;
-        padding: 0;
+        padding: 0; // Se elimina el padding y se reduce el ancho
     }
 
     .miniatura {
-        position: absolute;
+        position: absolute; // Se cambia la position a absolute, para mantener el responsive
     }
 
     @media screen and (max-width: 1024px) {
 
         .navbar .container-order {
             margin: 0;
-            font-size: 2em;
+            font-size: 2em; // aumenta la tipografia para el navbar
         }
 
         .navbar .navbar-nav {
-            padding-right: 5%;
+            padding-right: 5%; // Se refuce el padding para mejor visualizacion
           }
 
         .miniatura {
-            display: none;
+            display: none; // en dispositivos menores de 1024 px no se muestran las tarjetas secundarias ni las miniaturas
         }
         .tarjetasSecundarias {
             display: none;
         }
-        .tarjetasPrincipales {
+        .tarjetasPrincipales { // Ahora las tarjetas principales ocupan el 100% del ancho disponible
             width: 100%;
             padding: 0;
-            justify-content: center;
+            justify-content: center; // Se centran los elementos
         }
 
-        @media screen and (max-width: 750px) {
+        @media screen and (max-width: 750px) { // Se colocan 750 para mantener la responsividad
             .tarjetasPrincipales {
                 .background {
                     padding: 0 0 0 0;
@@ -293,7 +295,7 @@ body{
             .redesSociales {
                 padding-top: 0;    
                 .icons {
-                    width: 2em;
+                    width: 2em; // aumenta el tamanio de los elementos y se coloca un margen en la parte derecha
                     margin-right: 1em;
                 }
             }
