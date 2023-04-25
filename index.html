@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+     <!-- Importacion de librerias y framework-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Asignacion de hoja de estilos para el documento html correspondiente -->
+    <link rel="stylesheet" type="text/css" href="scss/style.css" />
+</head>
+<body>
+    <!-- Empleando el framework de bootstrap, se agrega un menu de navegacion, incorporando la clase navbar-transparent para indicarle que el color es transparente-->
+    <nav class="navbar navbar-default">
+        <!-- Se emplea un container-fluid con la finalidad de emplear el ancho disponible de la pantalla -->
+        <div class="container-fluid container-order"> 
+            <!-- Se incorpora el logo, indicandole que se trata del header correspondiente al navbar -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="Assets/img/Logo-Empresa.png" alt="Logo de la empresa" style="width: 30vh;"></a>
+            </div>
+            <!-- Menú de navegación -->
+            <ul class="nav navbar-nav">
+                <li><a href="#">Aviso de Privacidad</a></li>
+                <li><a href="#">ATENCIÓN AL CLIENTE</a></li>
+                <li><a href="#">Contáctanos</a></li>
+                <li><a href="#">Ubicar tienda</a></li>
+                <li><a href="#">Facturación</a></li>
+                <li><a href="#">Iniciar sesión/Registrarse</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="contenedorPrincipal"> <!--Contenedor principal para almacenar las tarjetas-->
+        <div class="tarjetasPrincipales"> <!--Contenedor para las tarjetas principales-->
+            <div class="redesSociales"> <!--Se incorpora el apartado de redes-->
+                <img class="icons" src="./Assets/img/iconos_Youtube.svg" alt="YouTube" href="#" style="width: 4em;">
+                <img class="icons" src="./Assets/img/iconos_Twitter.svg" alt="Twitter" href="#" style="width: 4em;">
+                <img class="icons" src="./Assets/img/iconos_Instagram.svg" alt="Instagram" href="#" style="width: 4em;">
+                <img class="icons" src="./Assets/img/iconos_Facebook.svg" alt="Facebook" href="#" style="width: 4em;">
+            </div>
+        </div>
+        <div class="tarjetasSecundarias"></div>
+        <div class ="tarjetasOcultas"></div>
+    </div>
+
+<script src="/js/script.js"></script>
+
+</body>
+
+</html>

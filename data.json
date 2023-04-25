@@ -1,0 +1,52 @@
+[  
+    {
+        "id": 1,
+        "nombre": "PAPEL COPY PAPER CARTA 5000H",
+        "img": "./Assets/img/uno.gif"
+    },
+    {
+        "id": 1,
+        "nombre": "CARPETA DE PRESENTACION OFFICE DEPOT (NEGRO, CARTA)",
+        "img": "./Assets/img/dos.gif"
+    },
+    {
+        "id": 1,
+        "nombre": "TELEFONO ALAMBRICO MODERNPHONE TC-8400 (NEGRO)",
+        "img": "./Assets/img/tres.jpg"
+    },
+    {
+        "id": 1,
+        "nombre": "LAPTOP LENOVO IDEAPAD 320 (CELERON N3060, 14 PULG.)",
+        "img": "./Assets/img/computadora.gif"
+    },
+    {
+        "id": 1,
+        "nombre": "AUDIFONOS SKULLCANDY JIB (NEGRO)",
+        "img": "./Assets/img/audifonos.gif"
+    },
+    {
+        "id": 1,
+        "nombre": "TARJETA DE MEMORIA MICRO SD KINGSTON CLASE 10 (16 GB)",
+        "img": "./Assets/img/memoria.gif"
+    },
+    {
+        "id": 2,
+        "nombre": "TARJETA DE MEMORIA MICRO SD KINGSTON CLASE 10 (16 GB)",
+        "img": "./Assets/img/cuatro.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "TARJETA DE MEMORIA MICRO SD KINGSTON CLASE 10 (16 GB)",
+        "img": "./Assets/img/tres.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "TARJETA DE MEMORIA MICRO SD KINGSTON CLASE 10 (16 GB)",
+        "img": "./Assets/img/cuatro.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "TARJETA DE MEMORIA MICRO SD KINGSTON CLASE 10 (16 GB)",
+        "img": "./Assets/img/tres.jpg"
+    }
+]
